@@ -132,7 +132,7 @@ Client VLAN 40 menggunakan alamat IP statik sesuai konfigurasi praktikum.
 
 ## Pengujian Internet dari Jakarta
 
-![Internet Jakarta](images/perc9-ping88.png)
+![Internet Jakarta](images/perc9-ping88-1.png)
 
 Client Jakarta melakukan ping ke internet menggunakan alamat 8.8.8.8.
 
