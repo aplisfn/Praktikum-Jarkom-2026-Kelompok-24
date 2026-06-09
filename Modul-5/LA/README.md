@@ -8,6 +8,55 @@ Pada praktikum ini dilakukan implementasi jaringan enterprise yang menghubungkan
 
 ---
 
+
+# Tabel IP Address
+
+## Site Jakarta
+
+| Perangkat | Interface | IP Address |
+|------------|------------|------------|
+| FortiGate Jakarta | Port1 | 10.10.100.1/30 |
+| Cisco Router Jakarta | G0/0 | 10.10.100.2/30 |
+| Cisco Router Jakarta | G0/1.10 | 192.168.10.2/24 |
+| Cisco Router Jakarta | G0/1.20 | 192.168.20.2/24 |
+| Cisco Router Jakarta | G0/1.60 | 192.168.60.2/24 |
+| MikroTik Jakarta | VLAN10 | 192.168.10.3/24 |
+| MikroTik Jakarta | VLAN20 | 192.168.20.3/24 |
+| MikroTik Jakarta | VLAN60 | 192.168.60.3/24 |
+| Gateway VRRP VLAN10 | VRID 10 | 192.168.10.1 |
+| Gateway VRRP VLAN20 | VRID 20 | 192.168.20.1 |
+| Gateway VRRP VLAN60 | VRID 60 | 192.168.60.1 |
+| Ubuntu Server | eth0 | 192.168.60.10/24 |
+
+## Site Surabaya
+
+| Perangkat | Interface | IP Address |
+|------------|------------|------------|
+| FortiGate Surabaya | Port1 | 10.10.200.1/30 |
+| MikroTik Surabaya | Ether1 | 10.10.200.2/30 |
+| MikroTik Surabaya | VLAN30 | 192.168.30.1/24 |
+| MikroTik Surabaya | VLAN40 | 192.168.40.1/24 |
+| Client VLAN30 | DHCP | 192.168.30.0/24 |
+| Client VLAN40 | Static | 192.168.40.0/24 |
+
+## Site ISP
+
+| Perangkat | Interface | IP Address |
+|------------|------------|------------|
+| MikroTik ISP | Ether2 | 10.0.12.1/30 |
+| FortiGate Jakarta | Port3 | 10.0.12.2/30 |
+| MikroTik ISP | Ether3 | 10.0.13.1/30 |
+| FortiGate Surabaya | Port1 | 10.0.13.2/30 |
+
+## GRE Tunnel
+
+| Perangkat | Interface | IP Address |
+|------------|------------|------------|
+| FortiGate Jakarta | GRE-JKT-SBY | 172.16.0.1/30 |
+| FortiGate Surabaya | GRE-SBY-JKT | 172.16.0.2/30 |
+
+---
+
 # Konfigurasi Perangkat
 
 ## Cisco Router Jakarta
